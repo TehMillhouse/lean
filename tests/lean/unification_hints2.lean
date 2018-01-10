@@ -7,7 +7,7 @@ constant F.raise (n m : nat) (f : F m) : F (m + n)
 example (m n : nat) (i : F m) : F.raise (succ n) m i = F.suc _ (F.raise n _ i) :=
 begin
   trace_state, -- the result should not contain recursor applications because the stdlib contains the unification hint add_succ_defeq_succ_add_hint
-  admit
+  sorry
 end
 
 
@@ -24,5 +24,5 @@ universe u
 example (α : Type u) (a b : α) (l₁ l₂ : list α) (i : G α l₂) : G.raise α (a::l₁) l₂ i = G.cons α a _ (G.raise α _ _ i) :=
 begin
   trace_state, -- the result should not contain recursor applications because we declared cons_append_hint above
-  admit
+  sorry
 end

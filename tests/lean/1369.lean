@@ -15,7 +15,7 @@ meta def nat_lit_le : tactic unit := do
 example : 17 ≤ 555555 :=
 begin
   nat_lit_le,
-  admit
+  sorry
 end
 
 example : { k : ℕ // k ≤ 555555 } :=
@@ -25,7 +25,7 @@ begin
   target >>= trace,
   trace_state,
   nat_lit_le,
-  admit
+  sorry
 end
 
 set_option pp.instantiate_mvars false
@@ -37,5 +37,5 @@ begin
   target >>= trace,
   trace_state,
   nat_lit_le,
-  admit
+  sorry
 end

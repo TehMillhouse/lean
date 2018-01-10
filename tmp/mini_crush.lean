@@ -219,7 +219,7 @@ theorem swapper_preserves_truth (f) : formula_denote f → formula_denote (swapp
 by induction f; simph; intros; rsimp
 
 exit
-begin [smt] induction f, admit, admit, intros, init_lemmas, add_lemmas_from_facts, eblast, rsimp_target, intros, eblast, rsimp_target end
+begin [smt] induction f, sorry, sorry, intros, init_lemmas, add_lemmas_from_facts, eblast, rsimp_target, intros, eblast, rsimp_target end
 
 exit
 

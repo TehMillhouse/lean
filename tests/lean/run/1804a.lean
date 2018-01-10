@@ -9,7 +9,7 @@ example : false :=
 begin
   dsimp [_match_1] at P,
   guard_hyp P := true,
-  admit
+  sorry
 end
 end
 
@@ -24,7 +24,7 @@ example : false :=
 begin
   dsimp [_match_1] at P,
   guard_hyp P := true,
-  admit
+  sorry
 end
 end
 
@@ -45,7 +45,7 @@ example : false :=
 begin
   dsimp [_match_1] at P,
   guard_hyp P := true,
-  admit
+  sorry
 end
 end
 
@@ -55,7 +55,7 @@ example : false :=
 begin
   dsimp [_match_2] at Q,
   guard_hyp Q := true,
-  admit
+  sorry
 end
 end
 

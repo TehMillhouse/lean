@@ -8,5 +8,5 @@ example (a : tree) : foo a = a :=
 begin
   induction a,
   trace_state,
-  repeat { admit }
+  repeat { sorry }
 end

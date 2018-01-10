@@ -20,28 +20,28 @@ example (m : ℕ) : ∀ n k, m + n = k → n + m = k := by intros; simp; assumpt
 
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end
 
 example (m : ℕ) : ∀ n k, n + m = k → n + m = k :=
-begin intros, simp, fail_if_success {assumption}, admit end
+begin intros, simp, fail_if_success {assumption}, sorry end

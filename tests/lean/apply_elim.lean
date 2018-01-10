@@ -8,5 +8,5 @@ begin
   intro a,
   apply nat.ind_on a,
   trace_state,
-  repeat {admit}
+  repeat {sorry}
 end

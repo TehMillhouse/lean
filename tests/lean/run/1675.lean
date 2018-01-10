@@ -36,7 +36,7 @@ example (p : Prop) : p :=
 begin
   fail_if_success {simp * at *}, -- should fail if nothing was simplified
   simp * at * {fail_if_unchanged := ff}, -- should work
-  admit
+  sorry
 end
 
 example (p : Prop) : let h : 0 = 0 := rfl in p :=
@@ -44,5 +44,5 @@ begin
   intro h,
   simp * at *,
   do {e₁ ← get_local `h >>= infer_type, e₂ ← to_expr ```(true), guard (e₁ = e₂)},
-  admit
+  sorry
 end

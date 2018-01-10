@@ -6,7 +6,7 @@ begin
   injection h_2,
   guard_hyp h_3 := y = y',
   guard_hyp h_4 := z = z',
-  admit
+  sorry
 end
 
 example (x y z x' y' z': ℕ)  (h : (x, y, z) = (x', y', z')) : false :=
@@ -16,5 +16,5 @@ begin
   guard_hyp h_2 := (y, z) = (y', z'),
   guard_hyp h_3 := y = y',
   guard_hyp h_4 := z = z',
-  admit
+  sorry
 end

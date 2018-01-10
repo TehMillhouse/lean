@@ -20,6 +20,6 @@ instance empty_is_Finite : Finite empty := {
                  induction v,
                  trace_state,
                  cases v_is_lt,
-                 repeat {admit}
+                 repeat {sorry}
               end
 }

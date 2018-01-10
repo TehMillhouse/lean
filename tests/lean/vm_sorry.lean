@@ -15,6 +15,6 @@ open expr tactic
 run_cmd (do v ← to_expr ``(half_baked ff) >>= whnf,
                 trace $ to_string v^.is_sorry)
 
-example : 0 = 1 := by admit
+example : 0 = 1 := by sorry
 example : 0 = 1 := by mk_sorry >>= exact
 example : 0 = 1 := by exact sorry

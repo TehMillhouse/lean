@@ -5,5 +5,5 @@ def some_lets : ℕ → ℕ → ℕ
 def some_unfolded_lets (n : ℕ) : ∃ v : ℕ , v = some_lets 5 n :=
 begin
   dunfold some_lets,
-  -- admit
+  -- sorry
 end

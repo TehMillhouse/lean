@@ -1002,7 +1002,7 @@ t ← mk_meta_var (expr.sort u),
 return $ expr.mk_sorry t
 
 /-- Closes the main goal using sorry. -/
-meta def admit : tactic unit :=
+meta def «sorry» : tactic unit :=
 target >>= exact ∘ expr.mk_sorry
 
 meta def mk_local' (pp_name : name) (bi : binder_info) (type : expr) : tactic expr := do

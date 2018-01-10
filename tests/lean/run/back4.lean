@@ -35,5 +35,5 @@ example (a b c : nat) (l₁ l₂ : list nat) : a ∈ b::b::c::l₂ ++ b::c::l₁
 begin [smt]
   intros,
   iterate {ematch, try {close}},
-  admit /- finish the proof admiting the goal -/
+  sorry /- finish the proof without proving the goal -/
 end
